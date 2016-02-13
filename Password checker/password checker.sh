@@ -164,8 +164,8 @@ dialog_local_pwd # calls the dialog
 # if passwords don't match then loop round until they do
 while [ $pwd_match_fail = "1" ]
 	do
-	echo "$(date) ITV_Assign: pwd match = failed"
-	echo "$(date) ITV_Assign: pwd match = $pwd_match_fail"
+	echo "$(date) $scripname: pwd match = failed"
+	echo "$(date) $scripname: pwd match = $pwd_match_fail"
 	display_pwd_match_fail
 	dialog_local_pwd
 	done
