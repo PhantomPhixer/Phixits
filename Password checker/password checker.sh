@@ -26,6 +26,14 @@ source "/Applications/Pashua.app/Contents/Resources/pashua.sh"
 scriptname="myscript"
 
 
+
+#########################################
+# password length and disallowed words list for use in check_pwd_valid routine
+required_length="8"
+not_allowed="password complex c0mplex welcome letmein qwerty baseball football master superman trustno1 qwertyuiop wanker ihatework passw0rd starwars bigboobs hello monday tuesday wednesday thursday friday saturday sunday"
+#
+#########################################
+
 ##### start of local account password screen ########################################
 # This screen asks the user to enter a password that will be used when the local account is created.
 conf_local_pwd="
