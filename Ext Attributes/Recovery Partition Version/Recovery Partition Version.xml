@@ -5,6 +5,7 @@
 <dataType>string</dataType>
 <scriptContentsMac>#!/bin/sh&#13;
 &#13;
+corp="<corp name for receipts>"&#13;
 result=`cat /Library/Receipts/corp/RecoveryHDVersion`&#13;
 &#13;
 if [ "$result" = "" ]; then&#13;

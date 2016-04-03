@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+corp="<corp name for receipts>"
 mountpoint="/Volumes/.tempmount"
 
 # create hidden folder to mount disk
@@ -21,8 +21,8 @@ version=`cat /Volumes/.tempmount/com.apple.recovery.boot/SystemVersion.plist | a
 
 
 ### Create Application receipt folder
-if [ ! -d /Library/Receipts/corp ]; then
-mkdir /Library/Receipts/corp
+if [ ! -d /Library/Receipts/$corp ]; then
+mkdir /Library/Receipts/$corp
 fi
 # update receipt - Overwrites if exists.
-echo "$version" > /Library/Receipts/corp/RecoveryHDVersion
+echo "$version" > /Library/Receipts/$corp/RecoveryHDVersion
