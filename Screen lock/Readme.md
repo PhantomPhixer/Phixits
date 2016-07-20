@@ -4,7 +4,7 @@ Originally made to work with Casper deployments.
 
 Not all my own work but I can't remember where I found the base idea of using the ARD lock function with JAMF helper, if it's yours let me know and I'll credit you. 
 
-The configurable version is designed for use with Casper.
+**The configurable version is designed for use with Casper.**
 the user message script is pre installed on the devices.
 the configuration script is called through a casper policy and uses casper script variables making it infinitely configurable and reusable.
 
