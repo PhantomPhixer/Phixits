@@ -74,6 +74,9 @@ exec 3>&-
 displayInfo () {
 
 # define the info box structure
+# laid out as text label on left and actual value on the right
+# the x is the distance from the left, so 1 is left edge and 140 the right hand column left edge
+# each row ha sthe same y number.
 conf_Display_Info="
 
 # Set window title
