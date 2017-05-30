@@ -164,7 +164,7 @@ Git revision: a0e04c60fc</string>
 	<key>PayloadIdentifier</key>
 	<string>TrackPadSettings</string>
 	<key>PayloadOrganization</key>
-	<string>ITVPLC</string>
+	<string>MyCorp</string>
 	<key>PayloadRemovalDisallowed</key>
 	<true/>
 	<key>PayloadScope</key>
