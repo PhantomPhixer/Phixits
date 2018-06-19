@@ -86,28 +86,28 @@ randNum=$(jot -r 1 1 4)
 if [ "$randNum" == "1" ] 
 then
 	/usr/sbin/lpadmin -p MacPrintSA -E -v lpd://$prUser@APRINTLBA.corp.com/MacPrintSA -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue A' -o printer-is-shared=false  -o CNColorMode=mono -o CNFinisher=BFINB1
-	/usr/sbin/lpadmin -p MacPrintGA -E -v lpd://$prUser@BPRINTLBA.itvplc.ads/MacPrintGA -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue B' -o printer-is-shared=false  -o CNColorMode=mono -o CNFinisher=BFINB1
+	/usr/sbin/lpadmin -p MacPrintGA -E -v lpd://$prUser@BPRINTLBA.corp.com/MacPrintGA -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue B' -o printer-is-shared=false  -o CNColorMode=mono -o CNFinisher=BFINB1
 	lpoptions -d MacPrintGA
 fi
 
 if [ "$randNum" == "2" ] 
 then
-	/usr/sbin/lpadmin -p MacPrintGB -E -v lpd://$prUser@BPRINTLBB.itvplc.ads/MacPrintGB -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue B' -o printer-is-shared=false  -o CNColorMode=mono -o CNFinisher=BFINB1
-	/usr/sbin/lpadmin -p MacPrintSB -E -v lpd://$prUser@APRINTLBB.itvplc.ads/MacPrintSB -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue A' -o printer-is-shared=false  -o CNColorMode=mono -o CNFinisher=BFINB1
+	/usr/sbin/lpadmin -p MacPrintGB -E -v lpd://$prUser@BPRINTLBB.corp.com/MacPrintGB -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue B' -o printer-is-shared=false  -o CNColorMode=mono -o CNFinisher=BFINB1
+	/usr/sbin/lpadmin -p MacPrintSB -E -v lpd://$prUser@APRINTLBB.corp.com/MacPrintSB -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue A' -o printer-is-shared=false  -o CNColorMode=mono -o CNFinisher=BFINB1
 	lpoptions -d MacPrintGB
 fi
 
 if [ "$randNum" == "3" ] 
 then
-	/usr/sbin/lpadmin -p MacPrintGB -E -v lpd://$prUser@BPRINTLBB.itvplc.ads/MacPrintGB -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue B' -o printer-is-shared=false  -o CNColorMode=mono -o CNFinisher=BFINB1
-	/usr/sbin/lpadmin -p MacPrintSA -E -v lpd://$prUser@APRINTLBA.itvplc.ads/MacPrintSA -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue A' -o printer-is-shared=false  -o CNColorMode=mono -o CNFinisher=BFINB1
+	/usr/sbin/lpadmin -p MacPrintGB -E -v lpd://$prUser@BPRINTLBB.corp.com/MacPrintGB -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue B' -o printer-is-shared=false  -o CNColorMode=mono -o CNFinisher=BFINB1
+	/usr/sbin/lpadmin -p MacPrintSA -E -v lpd://$prUser@APRINTLBA.corp.com/MacPrintSA -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue A' -o printer-is-shared=false  -o CNColorMode=mono -o CNFinisher=BFINB1
 	lpoptions -d MacPrintGB
 fi
 
 if [ "$randNum" == "4" ] 
 then
-	/usr/sbin/lpadmin -p MacPrintGA -E -v lpd://$prUser@BPRINTLBA.itvplc.ads/MacPrintGA -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue A' -o printer-is-shared=false -o CNColorMode=mono -o CNFinisher=BFINB1
-	/usr/sbin/lpadmin -p MacPrintSB -E -v lpd://$prUser@APRINTLBB.itvplc.ads/MacPrintSB -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue B' -o printer-is-shared=false  -o CNColorMode=mono -o CNFinisher=BFINB1
+	/usr/sbin/lpadmin -p MacPrintGA -E -v lpd://$prUser@BPRINTLBA.corp.com/MacPrintGA -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue A' -o printer-is-shared=false -o CNColorMode=mono -o CNFinisher=BFINB1
+	/usr/sbin/lpadmin -p MacPrintSB -E -v lpd://$prUser@APRINTLBB.corp.com/MacPrintSB -P /Library/Printers/PPDs/Contents/Resources/CNMCIRAC7065S2.ppd.gz -D 'uniFLOW LPR queue B' -o printer-is-shared=false  -o CNColorMode=mono -o CNFinisher=BFINB1
 	lpoptions -d MacPrintGA
 fi
 
