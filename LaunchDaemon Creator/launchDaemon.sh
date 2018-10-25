@@ -49,7 +49,7 @@ cat << EOF > /Library/${launchFolder}/com.mycorp.${launcherPlistName}.plist
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.itvplc.${launcherPlistName}</string>
+    <string>com.mycorp.${launcherPlistName}</string>
     <key>ProgramArguments</key>
     <array>
         <string>${launchItem}</string>
@@ -70,7 +70,7 @@ cat << EOF > /Library/${launchFolder}/com.mycorp.${launcherPlistName}.plist
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.itvplc.${launcherPlistName}</string>
+    <string>com.mycorp.${launcherPlistName}</string>
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
